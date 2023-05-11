@@ -38,39 +38,20 @@ class HomePage extends StatelessWidget {
     'Experience the thrill of our sports grounds'
   ];
 
-  final List<Widget> categories = [
+  final List<CategoryWidget> categories = [
     CategoryWidget(
-      title: 'National Parks',
-      color: Colors.red,
-    ),
+        title: 'National Parks', color: Colors.red, route: NationalPark()),
+    CategoryWidget(title: 'Lakes', color: Colors.green, route: Lakes()),
     CategoryWidget(
-      title: 'Lakes',
-      color: Colors.green,
-    ),
+        title: 'Hot Springs', color: Colors.yellow, route: HotSprings()),
+    CategoryWidget(title: 'Museums', color: Colors.blue, route: Museums()),
     CategoryWidget(
-      title: 'Hot Springs',
-      color: Colors.yellow,
-    ),
+        title: 'Sports Grounds', color: Colors.pink, route: SportsGrounds()),
     CategoryWidget(
-      title: 'Museums',
-      color: Colors.blue,
-    ),
+        title: 'Art Gallaries', color: Colors.orange, route: ArtGallaries()),
+    CategoryWidget(title: 'Hotels', color: Colors.blue, route: Hotels()),
     CategoryWidget(
-      title: 'Sports Grounds',
-      color: Colors.pink,
-    ),
-    CategoryWidget(
-      title: 'Art Gallaries',
-      color: Colors.orange,
-    ),
-    CategoryWidget(
-      title: 'Hotels',
-      color: Colors.blue,
-    ),
-    CategoryWidget(
-      title: 'Landscapes',
-      color: Colors.purple,
-    ),
+        title: 'Landscapes', color: Colors.purple, route: Landscapes()),
   ];
 
   @override
@@ -82,116 +63,20 @@ class HomePage extends StatelessWidget {
           color: Colors.green[800],
           child: ListView(
             padding: EdgeInsets.zero,
-            children: [
-              DrawerHeader(
-                decoration: BoxDecoration(
-                  color: Colors.green[700],
-                ),
-                child: Text(
-                  'Categories',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-              ListTile(
+            children: categories.map((category) {
+              return ListTile(
                 title: Text(
-                  'National Parks',
+                  category.title,
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => NationalPark()),
+                    MaterialPageRoute(builder: (context) => category.route),
                   );
                 },
-              ),
-              ListTile(
-                title: Text(
-                  'Lakes',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Lakes()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Hot Springs',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => HotSprings()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Museums',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Museums()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Sports Grounds',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => SportsGrounds()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Art Galleries',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => ArtGallaries()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Hotels',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Hotels()),
-                  );
-                },
-              ),
-              ListTile(
-                title: Text(
-                  'Landscapes',
-                  style: TextStyle(color: Colors.white),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => Landscapes()),
-                  );
-                },
-              ),
-            ],
+              );
+            }).toList(),
           ),
         ),
       ),
@@ -218,76 +103,21 @@ class HomePage extends StatelessWidget {
               }).toList(),
             ),
             SizedBox(height: 16),
-           Wrap(
-  direction: Axis.horizontal,
-  alignment: WrapAlignment.spaceEvenly,
-  children: [
-    Flexible(
-      flex: 1,
-      child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => NationalPark()),
-          );
-        },
-        child: categories[0],
-      ),
-    ),
-    Flexible(
-      flex: 1,
-      child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => Lakes()),
-          );
-        },
-        child: categories[1],
-      ),
-    ),
-    Flexible(
-      flex: 1,
-      child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => HotSprings()),
-          );
-        },
-        child: categories[2],
-      ),
-    ),
-    Flexible(
-      flex: 1,
-      child: GestureDetector(
-        onTap: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => Museums()),
-          );
-        },
-        child: categories[3],
-      ),
-    ),
-  ],
-),
-
-            SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                categories[4],
-                categories[5],
-              ],
-            ),
-            SizedBox(height: 16),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                categories[6],
-                categories[7],
-              ],
+            Wrap(
+              alignment: WrapAlignment.spaceEvenly,
+              spacing: 16.0, // gap between adjacent chips
+              runSpacing: 16.0, // gap between lines
+              children: categories.map((category) {
+                return GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => category.route),
+                    );
+                  },
+                  child: category,
+                );
+              }).toList(),
             ),
           ],
         ),
@@ -299,8 +129,10 @@ class HomePage extends StatelessWidget {
 class CategoryWidget extends StatelessWidget {
   final String title;
   final Color color;
+  final Widget route;
 
-  const CategoryWidget({required this.title, required this.color});
+  const CategoryWidget(
+      {required this.title, required this.color, required this.route});
 
   @override
   Widget build(BuildContext context) {
