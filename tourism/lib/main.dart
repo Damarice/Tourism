@@ -20,8 +20,9 @@ class TourismApp extends StatefulWidget {
 
 class _TourismAppState extends State<TourismApp> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Tourism App',
       theme: ThemeData(primarySwatch: Colors.green),
       home: HomePage(),

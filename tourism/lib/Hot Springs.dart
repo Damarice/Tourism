@@ -42,7 +42,7 @@ class _HotSpringsState extends State<HotSprings> {
           children: <Widget>[
             const DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.green,
               ),
               child: Text(
                 'Drawer Header',
