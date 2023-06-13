@@ -93,48 +93,43 @@ class NationalPark extends StatelessWidget {
     },
     {
       'name': 'Ol Donyo Sabuk National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/Sabuk.jpg',
       'description':
           'Ol Donyo Sabuk National Park is a stunning natural reserve located in central Kenya. It is known for its magnificent landscape, featuring a prominent mountain, diverse wildlife, and breathtaking views of the surrounding plains and Nairobi city.'
     },
     {
       'name': 'Ruma National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/Ruma.jpg',
       'description':
           'Ruma National Park is situated in the western part of Kenya, near Lake Victoria. It is the only protected area in the country where the rare Roan antelope can be found. The park also hosts other wildlife species such as Rothschild giraffes, elephants, buffalos, and various bird species. Visitors can enjoy game drives, birdwatching, and nature walks.'
     },
     {
       'name': 'Saiwa Swamp National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/Saiwa.jpg',
       'description':
           'Saiwa Swamp National Park is located in the western part of Kenya, near Kitale. It is known for being the smallest national park in Kenya and is home to the endangered Sitatunga antelope, which is adapted to the wetland habitat. The park offers guided walks along boardwalks, birdwatching, and the chance to see other animals such as monkeys and otters.'
     },
     {
       'name': 'Sibiloi National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/Sibiloi.jpg',
       'description':
           'Sibiloi National Park is situated on the northeastern shore of Lake Turkana and is a UNESCO World Heritage Site. It is known for its significant paleontological discoveries, including fossils of early hominids. The park also features diverse wildlife, including zebras, giraffes, crocodiles, and a variety of bird species. Visitors can explore the park and learn about human evolution and cultural heritage.'
     },
-    {
-      'name': 'Mount Elgon National Park',
-      'image': 'assets/images/maasai_mara.jpg',
-      'description':
-          'Mount Elgon National Park is situated on the eastern side of the country, near the border with Uganda. It is home to Mount Elgon, an extinct volcano with the largest surface area of any extinct volcano in the world. The park offers opportunities for hiking, birdwatching, and cave exploration. Visitors can also enjoy stunning waterfalls and panoramic views from the peaks.'
-    }, {
+     {
       'name': 'South Island National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/South.jpg',
       'description':
           'South Island National Park is located in Lake Turkana, and it comprises four islands: North Island, Central Island, South Island, and Snake Island. The park is known for its breeding colonies of Nile crocodiles, as well as other reptiles, bird species, and the unique desert vegetation. Visitors can explore the islands by boat, observe wildlife, and enjoy the serene lake environment.'
     },
      {
       'name': 'Tsavo East National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/East.jpg',
       'description':
           'Tsavo East National Park is one of the largest national parks in Kenya and is part of the greater Tsavo Conservation Area. It is characterized by vast savannah plains, the Yatta Plateau, and the Galana River. The park is home to diverse wildlife, including elephants, lions, giraffes, zebras, and over 500 bird species. Visitors can enjoy game drives, bush walks, and the Lugard Falls.'
     },
      {
       'name': 'Tsavo West National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/West.jpg',
       'description':
           'Tsavo West National Park is located in the coastal province of Kenya and is part of the greater Tsavo Conservation Area. It is known for its diverse landscapes, including volcanic hills, lava flows, and the Mzima Springs. The park is home to a variety of wildlife, including elephants, rhinos, lions, hippos, and diverse bird species. Visitors can enjoy game drives, nature walks, and cave exploration.'
     },
