@@ -7,7 +7,7 @@ class NationalPark extends StatelessWidget {
     // List of national parks (rearranged order)
     {
       'name': 'Nairobi National Park',
-      'image': 'assets/Nairobi.jpg',
+      'image': 'assets/images/Nairobi.jpg',
       'description':
           'Nairobi National Park is unique as it is located just outside the bustling city of Nairobi. It is one of the few national parks in the world with such proximity to a capital city. The park is known for its abundant wildlife, including lions, giraffes, zebras, and rhinos. Visitors can enjoy game drives, nature walks, and the Nairobi Safari Walk, which provides an educational experience.'
     },
@@ -31,7 +31,7 @@ class NationalPark extends StatelessWidget {
     },
      {
       'name': 'Central Island National Park',
-      'image': 'assets/Central.jpg',
+      'image': 'assets/images/Central.jpg',
       'description':
           'Central Island National Park is situated in Lake Turkana, the largest desert lake in the world. The park consists of three active volcanic crater lakes and offers stunning landscapes and geological formations. It is a vital breeding ground for Nile crocodiles and serves as a sanctuary for a variety of bird species, including flamingos, pelicans, and cormorants.'
     },{
