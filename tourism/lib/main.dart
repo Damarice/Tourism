@@ -10,10 +10,12 @@ import 'package:tourism/National%20Parks.dart';
 import 'package:tourism/Sports%20Grounds.dart';
 
 void main() {
-  runApp(TourismApp());
+  runApp(const TourismApp());
 }
 
 class TourismApp extends StatefulWidget {
+  const TourismApp({super.key});
+
   @override
   State<TourismApp> createState() => _TourismAppState();
 }
@@ -40,25 +42,25 @@ class HomePage extends StatelessWidget {
   ];
 
   final List<CategoryWidget> categories = [
-    CategoryWidget(
+    const CategoryWidget(
         title: 'National Parks', color: Colors.red, route: NationalPark()),
-    CategoryWidget(title: 'Lakes', color: Colors.green, route: Lakes()),
-    CategoryWidget(
+    const CategoryWidget(title: 'Lakes', color: Colors.green, route: Lakes()),
+    const CategoryWidget(
         title: 'Hot Springs', color: Colors.yellow, route: HotSprings()),
-    CategoryWidget(title: 'Museums', color: Colors.blue, route: Museums()),
-    CategoryWidget(
+    const CategoryWidget(title: 'Museums', color: Colors.blue, route: Museums()),
+    const CategoryWidget(
         title: 'Sports Grounds', color: Colors.pink, route: SportsGrounds()),
-    CategoryWidget(
+    const CategoryWidget(
         title: 'Art Gallaries', color: Colors.orange, route: ArtGallaries()),
-    CategoryWidget(title: 'Hotels', color: Colors.blue, route: Hotels()),
-    CategoryWidget(
+    const CategoryWidget(title: 'Hotels', color: Colors.blue, route: Hotels()),
+    const CategoryWidget(
         title: 'Landscapes', color: Colors.purple, route: Landscapes()),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Tourism App')),
+      appBar: AppBar(title: const Text('Tourism App')),
       drawer: Drawer(
         child: Container(
           color: Colors.green[800],
@@ -68,7 +70,7 @@ class HomePage extends StatelessWidget {
               return ListTile(
                 title: Text(
                   category.title,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                 ),
                 onTap: () {
                   Navigator.push(
@@ -93,17 +95,17 @@ class HomePage extends StatelessWidget {
               ),
               items: slideMessages.map((message) {
                 return Container(
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   child: Center(
                     child: Text(
                       message,
-                      style: TextStyle(fontSize: 20),
+                      style: const TextStyle(fontSize: 20),
                     ),
                   ),
                 );
               }).toList(),
             ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Wrap(
               alignment: WrapAlignment.spaceEvenly,
               spacing: 16.0, // gap between adjacent chips
@@ -133,7 +135,7 @@ class CategoryWidget extends StatelessWidget {
   final Widget route;
 
   const CategoryWidget(
-      {required this.title, required this.color, required this.route});
+      {super.key, required this.title, required this.color, required this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -144,7 +146,7 @@ class CategoryWidget extends StatelessWidget {
       child: Center(
         child: Text(
           title,
-          style: TextStyle(
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 20,
           ),

@@ -14,7 +14,7 @@ class _LakesState extends State<Lakes> {
       appBar: AppBar(
         title: const Text('Lakes'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Lakes',
           style: TextStyle(fontSize: 24),

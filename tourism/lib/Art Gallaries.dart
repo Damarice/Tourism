@@ -14,7 +14,7 @@ class _ArtGallariesState extends State<ArtGallaries> {
       appBar: AppBar(
         title: const Text('Art Gallaries'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Art Gallaries',
           style: TextStyle(fontSize: 24),

@@ -14,7 +14,7 @@ class _LandscapesState extends State<Landscapes> {
       appBar: AppBar(
         title: const Text('Landscapes'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Landscapes',
           style: TextStyle(fontSize: 24),

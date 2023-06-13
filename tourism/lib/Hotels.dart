@@ -14,7 +14,7 @@ class _HotelsState extends State<Hotels> {
       appBar: AppBar(
         title: const Text('Hotels'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Hotels',
           style: TextStyle(fontSize: 24),

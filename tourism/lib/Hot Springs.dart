@@ -14,7 +14,7 @@ class _HotSpringsState extends State<HotSprings> {
       appBar: AppBar(
         title: const Text('Hot Springs'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Hot Springs',
           style: TextStyle(fontSize: 24),

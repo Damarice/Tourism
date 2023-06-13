@@ -14,7 +14,7 @@ class _MuseumsState extends State<Museums> {
       appBar: AppBar(
         title: const Text('Museums'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Museums',
           style: TextStyle(fontSize: 24),

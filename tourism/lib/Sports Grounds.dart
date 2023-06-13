@@ -14,7 +14,7 @@ class _SportsGroundsState extends State<SportsGrounds> {
       appBar: AppBar(
         title: const Text('Sports Grounds'),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           'Welcome to Our Sports Grounds',
           style: TextStyle(fontSize: 24),

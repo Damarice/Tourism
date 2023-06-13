@@ -34,7 +34,8 @@ class NationalPark extends StatelessWidget {
       'image': 'assets/images/Central.jpg',
       'description':
           'Central Island National Park is situated in Lake Turkana, the largest desert lake in the world. The park consists of three active volcanic crater lakes and offers stunning landscapes and geological formations. It is a vital breeding ground for Nile crocodiles and serves as a sanctuary for a variety of bird species, including flamingos, pelicans, and cormorants.'
-    },{
+    },
+    {
       'name': 'Chyulu Hills National Park',
       'image': 'assets/images/Chyulu.jpg',
       'description':
