@@ -133,6 +133,12 @@ class NationalPark extends StatelessWidget {
       'description':
           'Tsavo West National Park is located in the coastal province of Kenya and is part of the greater Tsavo Conservation Area. It is known for its diverse landscapes, including volcanic hills, lava flows, and the Mzima Springs. The park is home to a variety of wildlife, including elephants, rhinos, lions, hippos, and diverse bird species. Visitors can enjoy game drives, nature walks, and cave exploration.'
     },
+    {
+      'name': 'Maasai Mara National Park',
+      'image': 'assets/images/Maasai.jpg',
+      'description':
+          'Maasai Mara National Park is a renowned wildlife reserve in southwestern Kenya. It is famous for its vast savannah plains, teeming with diverse wildlife, including the iconic Big Five (elephant, lion, leopard, rhinoceros, and buffalo), and hosting the annual wildebeest migration, a spectacular natural phenomenon.'
+    },
     // Rest of the national parks...
   ];
 
