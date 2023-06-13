@@ -87,22 +87,15 @@ class NationalPark extends StatelessWidget {
           'Mount Elgon National Park is situated on the eastern side of the country, near the border with Uganda. It is home to Mount Elgon, an extinct volcano with the largest surface area of any extinct volcano in the world. The park offers opportunities for hiking, birdwatching, and cave exploration. Visitors can also enjoy stunning waterfalls and panoramic views from the peaks.'
     },{
       'name': 'Mount Kenya National Park',
-      'image': 'assets/images/maasai_mara.jpg',
+      'image': 'assets/images/Kenya.jpg',
       'description':
           'Mount Kenya National Park is located around Mount Kenya, the highest mountain in Kenya and the second-highest in Africa. The park features diverse ecosystems, from bamboo forests to alpine meadows. It is a UNESCO World Heritage Site and offers opportunities for mountain climbing, trekking, wildlife spotting, and experiencing unique high-altitude flora and fauna.'
     },
     {
-      'name': 'Nairobi National Park',
-      'image': 'assets/images/maasai_mara.jpg',
-      'description':
-          'Nairobi National Park is unique as it is located just outside the bustling city of Nairobi. It is one of the few national parks in the world with such proximity to a capital city. The park is known for its abundant wildlife, including lions, giraffes, zebras, and rhinos. Visitors can enjoy game drives, nature walks, and the Nairobi Safari Walk, which provides an educational experience.'
-    },
-
-{
       'name': 'Ol Donyo Sabuk National Park',
       'image': 'assets/images/maasai_mara.jpg',
       'description':
-          'Ol Donyo Sabuk National Park'
+          'Ol Donyo Sabuk National Park is a stunning natural reserve located in central Kenya. It is known for its magnificent landscape, featuring a prominent mountain, diverse wildlife, and breathtaking views of the surrounding plains and Nairobi city.'
     },
     {
       'name': 'Ruma National Park',
